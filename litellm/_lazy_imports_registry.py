@@ -154,6 +154,11 @@ LLM_CONFIG_NAMES: Final = (
     "ScalewayRerankConfig",
     "DeepinfraRerankConfig",
     "HostedVLLMRerankConfig",
+    "PerplexityDecisionsConfig",
+    "TypeSafeDecisionsConfig",
+    "OpenRouterDecisionsConfig",
+    "CloudflareDecisionsConfig",
+    "StrandsDeciderDecisionsConfig",
     "NvidiaNimRerankConfig",
     "NvidiaNimRankingConfig",
     "VertexAIRerankConfig",
@@ -697,6 +702,14 @@ _LLM_CONFIGS_IMPORT_MAP: Final = {
     "HostedVLLMRerankConfig": (
         ".llms.hosted_vllm.rerank.transformation",
         "HostedVLLMRerankConfig",
+    ),
+    "PerplexityDecisionsConfig": (".llms.perplexity.decisions.transformation", "PerplexityDecisionsConfig"),
+    "TypeSafeDecisionsConfig": (".llms.typesafe.decisions.transformation", "TypeSafeDecisionsConfig"),
+    "OpenRouterDecisionsConfig": (".llms.openrouter.decisions.transformation", "OpenRouterDecisionsConfig"),
+    "CloudflareDecisionsConfig": (".llms.cloudflare.decisions.transformation", "CloudflareDecisionsConfig"),
+    "StrandsDeciderDecisionsConfig": (
+        ".llms.strands_decider.decisions.transformation",
+        "StrandsDeciderDecisionsConfig",
     ),
     "NvidiaNimRerankConfig": (
         ".llms.nvidia_nim.rerank.transformation",
